@@ -218,6 +218,7 @@ function genConfig (name) {
   const config = {
     input: opts.entry,
     external: opts.external,
+    sourceMap: true,
     plugins: [
       replace({
         __WEEX__: !!opts.weex,
